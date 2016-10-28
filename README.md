@@ -5,7 +5,8 @@ A NextGen scalable solution model to provide an effective and fast search result
 
 ###DML, DDL Statements
 ```
-CREATE KEYSPACE ecommodel WITH REPLICATION = {'class' : 'SimpleStrategy', 'replication_factor' : 3}; create table products (
+CREATE KEYSPACE ecommodel WITH REPLICATION = {'class' : 'SimpleStrategy', 'replication_factor' : 3}; 
+create table products (
 pid int primary key,
 pname varchar, 
 pdesc varchar, 
