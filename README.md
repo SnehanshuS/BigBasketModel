@@ -7,8 +7,13 @@ A NextGen scalable solution model to provide an effective and fast search result
 ```
 CREATE KEYSPACE ecommodel WITH REPLICATION = {'class' : 'SimpleStrategy', 'replication_factor' : 3}; create table products (
 pid int primary key,
-pname varchar, pdesc varchar, pcost float, imageurl varchar );
+pname varchar, 
+pdesc varchar, 
+pcost float, 
+imageurl varchar );
+
 use ecommodel;
+
 INSERT INTO products (pid, pname, pdesc, pcost, imageurl) VALUES (1001,'Laptop', 'Laptop Dell Intel core i5 processor', 450,'http://res.cloudinary.com/dzh2erb9v/image/upload/v1461651436/dell_laptop_tqdfed.jpg');
 INSERT INTO products (pid, pname, pdesc, pcost, imageurl) VALUES (1002,'Laptop', 'Laptop Lenevo Intel core i5 processor', 550, 'http://res.cloudinary.com/dzh2erb9v/image/upload/v1461651431/lenovo_laptop_bimnvz.jpg');
 INSERT INTO products (pid, pname, pdesc, pcost, imageurl) VALUES (1003,'Camera', 'Camera Nikon, 21 MP, SLR', 1000, 'http://res.cloudinary.com/dzh2erb9v/image/upload/v1461651436/nikon_slr_tnmjoz.jpg');
